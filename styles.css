@@ -1,0 +1,266 @@
+html {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/*
+body {
+    background-color:seashell;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    width: 1280px;
+  }
+  
+  ul {
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+
+  */
+
+  
+  /*Sizing*/
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  .spacer {
+    margin: auto;
+  }
+  
+  .main {
+    margin: auto;
+      
+  }
+  
+/*Header Section*/
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #B683C3;
+    font-family: Verdana, sans-serif;
+    font-size: .88rem;
+  }
+  
+  .header .logo {
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    color: #B683C3;
+    font-weight: 600;
+  }
+  
+  .header .navigation {
+    color: #36393A;
+  }
+  
+  .header li {
+    padding-right: 2rem;
+    display: inline;
+    text-align: right; 
+    }
+
+  @media only screen and (max-width: 550px) {
+    .header {
+        flex-direction: column;
+      }
+    
+    .header .logo {
+        flex-grow: 0;
+      }
+    }
+
+    /*Banner Section*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background: url("/Users/julietita/CodeAcademy/flexbox-business-site-starting/IMAGENES/pawel-czerwinski-p7GiE9kx3Hw-unsplash.jpeg") center center no-repeat;
+    background-size: cover;
+    color: #36393A;
+  }
+  
+  .banner h2 {
+    padding: .55rem 0;
+    border-top: 4px solid #36393A;
+    border-bottom: 4px solid #36393A;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .banner h4 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .banner {
+      height: 20rem;
+    }
+  
+    .banner h2 {
+      font-size: 2rem;
+    }
+
+    .banner h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 530px) {
+    .banner {
+      height: 15rem;
+    }
+  
+    .banner h2 {
+      font-size: 1.5rem;
+    }
+    .banner h4 {
+      font-size: 1rem;
+    }
+  }
+
+  /*Trabajos section*/
+
+.trabajos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: wrap;
+}
+
+.container {
+  width: 100%;
+}
+
+.trabajos .title{
+  color: seashell;
+  background-color: #36393A;
+  opacity: 0.9;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.container .title {
+  display: inline;
+}
+
+.container .card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 8%;
+  margin-top: 6%;
+}
+
+.container .card img {
+  width: 300px;
+  height: 200px;
+  padding: 0.5rem;
+}
+
+.card h4 {
+  color: #36393A;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .card {
+    padding-top: 15%;
+    margin-top: 6%;
+  }
+}
+
+/* Footer */
+  
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+  height: 12rem;
+}
+
+footer .image-container {
+  
+}
+
+footer img {
+  height: 11.5rem;
+  width: auto;
+  justify-content: center;
+  padding-right: 2rem;
+  opacity: 0.8;
+  
+}
+
+footer .content {
+  flex-grow: 1;
+  font-style: italic;
+  color: #9b9b9b;
+}
+
+footer p {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+footer p:last-child {
+  padding-bottom: 0;
+}
+
+footer .author {
+  color: #B683C3;
+}
+
+footer em {
+  color: #cfcfcf;
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    flex-direction: column;
+    padding: 0 10% 2rem 10%;
+  }
+
+  footer .image-container {
+    height: 300px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+}
