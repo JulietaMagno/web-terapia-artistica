@@ -108,7 +108,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 30rem;
-    background: url("/Users/julietita/CodeAcademy/flexbox-business-site-starting/IMAGENES/pawel-czerwinski-p7GiE9kx3Hw-unsplash.jpeg") center center no-repeat;
+    background: url("IMAGENES/pawel-czerwinski-p7GiE9kx3Hw-unsplash.jpeg") center center no-repeat;
     background-size: cover;
     color: #36393A;
   }
